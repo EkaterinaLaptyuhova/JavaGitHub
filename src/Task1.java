@@ -1,4 +1,5 @@
 public class Task1 {
+
     public static void main(String[] args){
         int x = 4666;
         long x2 = 200000000123L;
@@ -8,16 +9,18 @@ public class Task1 {
         double y2 = 0.000045;
         char symbol = '@';
         String text = "Assessment 1";
-        boolean flag = true;
+        boolean flag = false;
 
 
         // task 1.1
-        int resultStep1;
         int castY = (int) y;
-        System.out.println(x + " + " + castY + " = " + (resultStep1 = x+castY));
+        int resultStep1 = x + castY;
+        System.out.println(x + " + " + castY + " = " + resultStep1);
 
         // task 1.2
-        System.out.println(x2 + " / " + resultStep1 + " = " + (double) x2 / resultStep1);
+
+        String s = "%s / %d = %s".formatted(x2, resultStep1, (double) x2 / resultStep1);
+        System.out.println(s);
 
         // task 1.3
         System.out.println("ASCII/Unicode код " + symbol + " = " + (int) symbol);
